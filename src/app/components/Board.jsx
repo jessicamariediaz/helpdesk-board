@@ -96,7 +96,7 @@ export default function Board() {
 
   return (
     <div className="space-y-6">
-      {/* Filters */}
+      {/* filters */}
       <div className="flex flex-wrap gap-4 items-center">
         <div className="flex gap-2 items-center">
           <span className="font-semibold">Status</span>
@@ -119,12 +119,14 @@ export default function Board() {
 
 {/* queue summary */}
       <MyQueueSummary
-        tickets={tickets.filter((t) => queue[t.id])}
-        onRemove={handleRemoveFromQueue}
-        onClear={handleClearQueue}
+        tickets = {tickets.filter((t) => queue[t.id])}
+        onRemove = {handleRemoveFromQueue}
+        onClear = {handleClearQueue}
       />
 
-      {/* tickets heading */}
+
+
+
       <h2 className="text-xl font-semibold">Tickets</h2>
       <TicketList
         tickets={visibleTickets}
