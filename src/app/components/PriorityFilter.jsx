@@ -2,7 +2,8 @@
 import React from 'react';
 
 export default function PriorityFilter({value, onChange}) {
-  // Available priority levels (as required by the rubric)
+
+//priorities
   const priorities = ['All', 'Low', 'Medium', 'High', 'Critical'];
 
   return (

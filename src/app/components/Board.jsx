@@ -29,8 +29,11 @@ export default function Board() {
       } finally {
         setLoading(false);
       }
+      const res = await fetch('/api/tickets', {cache: 'no-store'});
+
     }
     fetchTickets();
+
   }, []);
 
   // simulate live updates
